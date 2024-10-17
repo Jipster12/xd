@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto M1</title>
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Proyecto M1</h1>
+    
+    <section id="sobre-mi">
+      <h2>Sobre Mí</h2>
+      <p id="sobre-mi-parrafo">Mi nombre es Gabriel Conde tengo 23 años, soy un apasionado de la programacion desde chico. Siempre senti una curiosidad por todo este mundo y mi viaje comenzo en el 2019 por primera vez diciendo Hola Mundo en C</p>
+    </section>
+    
+    <section id="tecnologias">
+      <h2>Tecnologías</h2>
+      <div class="tech-cards">
+        <div class="card" data-tech="JavaScript">
+          <h5>JavaScript</h5>
+          <img src="/public/logos/javascript.svg" alt="JavaScript">
+        </div>
+        <div class="card" data-tech="Angular">
+          <h5>Angular</h5>
+          <img src="/public/logos/angular.svg" alt="Angular">
+        </div>
+        <div class="card" data-tech="NestJS">
+          <h5>NestJS</h5>
+          <img src="/public/logos/nestjs.svg" alt="NestJS">
+        </div>
+        <div class="card" data-tech="Golang">
+          <h5>Golang</h5>
+          <img src="/public/logos/golang.svg" alt="Golang">
+        </div>
+      </div>
+    </section>
+    
+    <section id="actividades">
+      <h2>Actividades</h2>
+      <form id="actividad-form">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <input type="url" id="imagen-url" placeholder="URL de la imagen" required>
+        <button type="submit">Agregar Actividad</button>
+      </form>
+      <div id="actividades-lista"></div>
+    </section>
+  </div>
+  <script type="module" src="/scripts/index.js"></script>
+</body>
+</html>
